@@ -1,0 +1,17 @@
+        <footer>
+
+            <div class="Color1" id="footerRight">
+            <ul>
+                <li>phiro138@student.liu.se</li>
+                <li>maxwi824@student.liu.se</li>
+                <li>dankl423@student.liu.se</li>
+                <li>jojoe778@student.liu.se</li>
+            </ul> 
+            </div>
+            <div class="Color2" id ="footerLeft">
+                <p> LEGO® <br>Är ett varumärke av LEGO gruppen som inte sponsrar, godkänner eller stöder denna webbplats. <br> Alla moddeller är byggda av LEGO®-klossar och designade av Philip Robertsson<br>
+                Lego-Lådan drivs i, och får endast användas i icke-komersiellt syfte.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta name='Author' content='Max Wiklundh & Philip Robertsson & Joel Josephson & Daniel Klemetti & Grupp 3'>
+        <meta name='Description' content='Project'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Our CSS-->
+        <link rel="stylesheet" media="screen" href="styles.css" type="text/css">
+        
+        
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- Our Script-->
+        <script src="script.js"></script>
+
+        <!-- Font links-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">

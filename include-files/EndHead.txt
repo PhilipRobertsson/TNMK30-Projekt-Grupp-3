@@ -1,0 +1,16 @@
+    </head>
+
+    <body onload="carryOver()">
+
+        <div class="headerDiv">
+
+            <div class="menu Color1">  
+                    <a onclick="document.location='index.php'">Startsida</a>
+                    <a onclick="document.location='hjalp.php'">Hjälp</a>
+                    <a onclick="document.location='kontakt.php'">Kontakta oss</a>
+                    <a id="dark"  onclick="changeTheme('#b19cd9', '#e0a7fa', '#FAF8F6', 'images/LoggaDark.png')">Mörkt tema</a>						
+					<a id="light"  onclick="changeTheme('#de9dac', '#ffd1dc', '#1D1C1A', 'images/LoggaLight.png')">Ljust tema</a>
+            </div>
+        </div>
+        
+        <div id="bgImage"></div>

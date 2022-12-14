@@ -1,0 +1,1438 @@
+/* Text */
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #FAF8F6;
+}
+
+/* Bakgrund */
+#bgImage {
+    background-image: url("images/bgLight.png");
+    position: fixed;
+    width: 101%;
+    height: 101%;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(6px) brightness(75%);
+    z-index: -9;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    margin-left: -1vw;
+}
+
+/* Mobiltelefoner*/
+@media only screen and (min-width: 280px) {
+    #bgImage {
+        background-size: 101%;
+        background-repeat: repeat;
+    }
+
+    /* Navigation */
+    .menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1vw;
+        border-bottom: solid 2px white;
+    }
+
+    .menu ul, .dropdown {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .menu a:hover, #dark:hover, #light:hover {
+        background-color: rgb(184, 64, 100);
+        border-radius: 1vw;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 1vw;
+        float: left;
+        text-decoration: none;
+    }
+
+    /* Klass för att centrera relevanta element */
+    .center {
+        margin: auto;
+        margin-bottom: 5vw;
+        width: 85%;
+    }
+
+    /* Dark och Light mode klasser som används runt om hemsidan */
+    .Color1 {
+        background-color: #b19cd9;
+    }
+
+    .Color2 {
+        background-color: #e0a7fa;
+    }
+
+    /* Logga på index sidan*/
+    #logo {
+        display: block;
+        margin-top: 15vw;
+        margin-bottom: 5vw;
+        height: auto;
+        width: 100%;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Sökrutan på index och result */
+    .searchBars {
+        display: table;
+        margin-top: 2vw;
+        padding: 1vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+        margin: auto;
+
+    }
+
+    .searchBarLeft {
+        display: table-cell;
+
+    }
+
+    .searchBarRight {
+        display: table-cell;
+    }
+
+    /* Hänvisning till hjälpsidan */
+    .QuestionMark {
+        margin: 0.2vw;
+        padding-left: 0.25vw;
+        padding-right: 0.25vw;
+        border: solid 2px white;
+        border-radius: 0.5vw;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        padding: 1vw;
+        position: absolute;
+        border-radius: 2vw;
+        border: solid 2px white;
+        box-shadow: 0vw 1vw 2vw 0vw rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* "Legolådan" på index */
+    #TopLådan {
+        background-image: url("images/ramFull.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 22vw;
+        margin-top: 4vw;
+        margin-bottom: 0;
+
+    }
+
+    #LegoLådan {
+        background-color: #be935a;
+        background-image: url("images/ramCenter.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        width: 100%;
+        min-height: 70vw;
+        height: auto;
+    }
+
+    #BottLådan {
+        background-color: #be935a;
+        background-image: url("images/ramBotten.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6vw;
+        margin-top: -5vw;
+    }
+
+    /* Klossar i sökning */
+    .LegoLådanPartDivs {
+        display: block;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 1vw;
+        overflow: hidden;
+
+    }
+
+    .LegoLådanPartDivs img {
+        width: 9vw;
+        height: auto;
+    }
+
+    .partDivImg {
+        float: left;
+        border: solid 2px Brown;
+        vertical-align: center;
+
+    }
+
+    .LegoLådanPartDivs h2 {
+        float: left;
+        font-size: 3vw;
+        vertical-align: center;
+        margin-left: 1vw;
+    }
+
+    .partDivClose {
+        float: right;
+    }
+
+    /* Huvud element på hjälpsidan */
+    .hjalpParent {
+        margin: auto;
+        margin-top: 12vw;
+        height: auto;
+        width: 90%;
+        display: block;
+    }
+
+    /* Allmän info på hjälpsidan */
+    .allmant {
+        display: block;
+        border-radius: 2vw;
+        border: solid 2px white;
+        padding: 1vw;
+        margin-bottom: 10vw;
+        text-align: center;
+    }
+
+    /* Hjälprutan för "sök" och "resultat" */
+    .hjalpRuta {
+        display: block;
+        border-radius: 2vw;
+        margin-bottom: 10vw;
+        border: solid 2px white;
+        padding: 1vw;
+    }
+
+    .hjalpBild img {
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    /* Höger och vänster element i divar */
+
+    .left {
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        border-radius: 2vw;
+
+    }
+
+    .right {
+        width: 96%;
+        margin: 1vw;
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+
+    }
+
+    /* Huvudelement för kontakt divar */
+    .kontaktParent {
+        display: block;
+        width: 90%;
+        padding: 1vw;
+        margin: 10vw 2vw 1vw;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .kontaktParent img {
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+    }
+
+    /*
+    Result page Parts container och content samt Sets container och content
+	*/
+    #YourPartsContainer {
+        background-color: #b19cd9;
+        width: 75%;
+        margin: 2vw auto auto auto;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    #YourParts {
+        display: table;
+        width: 95%;
+        margin: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+    }
+
+    .setsDiv {
+        display: table;
+        margin: auto;
+        width: 95%;
+        margin-top: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+    }
+
+    .setsDivContainer {
+        background-color: #8b72bb;
+        width: 75%;
+        margin: 2vw auto auto auto;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    /*Prev, next page pilar på resultpage*/
+    .NextPageBar {
+        float: right;
+        background-color: #b19cd9;
+        display: table;
+        margin: 1vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        border: solid 2px white;
+    }
+
+    /*
+		Sets part of result page
+	*/
+    .AddParts {
+        margin: 25% auto 1vw auto;
+        background-color: #b19cd9;
+        display: table;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    /*Left och right divar för Set content*/
+    .leftSetDiv {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        border-radius: 2vw;
+
+    }
+
+    .rightSetDiv {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        border-radius: 2vw;
+        margin-right: 2vw;
+        padding: 1vw;
+    }
+
+    .setImg {
+        width: 70%;
+        height: auto;
+        padding: 2vw;
+    }
+
+    /*Används för att gömma element på vissa skärmstorlekar*/
+    .hidden {
+        display: none;
+    }
+
+    /*Generell info på resultspage*/
+    .setsHeader {
+        padding-left: 2vw;
+    }
+
+    .pageIndex {
+        margin: 0vw 2vw
+    }
+
+    #partHeader {
+        text-align: center;
+        padding: 1vw;
+    }
+}
+
+/* Surfplattor - inprincip samma CSS klasser och IDs som ovanför men anpassade för annan media */
+@media only screen and (min-width: 768px) 
+{
+    #bgImage
+    {
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1vw;
+        border-bottom: solid 2px white;
+    }
+
+    .menu ul, .dropdown {
+        overflow: hidden;
+    }
+
+    .menu a:hover, #dark:hover, #light:hover {
+        background-color: rgb(184, 64, 100);
+        border-radius: 1vw;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 1vw;
+        float: left;
+        text-decoration: none;
+    }
+
+    .center {
+        margin: auto;
+        margin-bottom: 5vw;
+        width: 85%;
+    }
+
+    .Color1 {
+        background-color: #b19cd9;
+    }
+
+    .Color2 {
+        background-color: #e0a7fa;
+    }
+
+    #logo {
+        display: block;
+        margin-top: 12vw;
+        margin-bottom: 5vw;
+        height: auto;
+        width: 100%;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+        background-color: rgba(177, 156, 217, 0.5);
+    }
+
+    .searchBars {
+        display: table;
+        margin-top: 2vw;
+        margin-left: 26%;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+
+    }
+
+    .searchBarLeft {
+        display: table-cell;
+
+    }
+
+    .searchBarRight {
+        display: table-cell;
+    }
+
+    .QuestionMark {
+        margin: 0.2vw;
+        padding-left: 0.25vw;
+        padding-right: 0.25vw;
+        border: solid 2px white;
+        border-radius: 0.5vw;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        padding: 1vw;
+        position: absolute;
+        border-radius: 2vw;
+        border: solid 2px white;
+        box-shadow: 0vw 1vw 2vw 0vw rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    #TopLådan {
+        background-image: url("images/ramFull.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 22vw;
+        margin-top: 4vw;
+        margin-bottom: 0;
+
+    }
+
+    #LegoLådan {
+        background-color: #be935a;
+        background-image: url("images/ramCenter.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        width: 100%;
+        min-height: 30vw;
+        height: auto;
+    }
+
+    #BottLådan {
+        background-color: #be935a;
+        background-image: url("images/ramBotten.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6vw;
+        margin-top: -5vw;
+    }
+
+    .LegoLådanPartDivs {
+        display: block;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 1vw;
+        overflow: hidden;
+
+    }
+
+    .LegoLådanPartDivs img {
+        width: 9vw;
+        height: auto;
+    }
+
+    .partDivImg {
+        float: left;
+        border: solid 2px Brown;
+        vertical-align: center;
+
+    }
+
+    .LegoLådanPartDivs h2 {
+        float: left;
+        font-size: 3vw;
+        vertical-align: center;
+        margin-left: 1vw;
+    }
+
+    .partDivClose {
+        float: right;
+    }
+
+    .hjalpParent {
+        margin: auto;
+        margin-top: 12vw;
+        height: auto;
+        width: 90%;
+        display: block;
+    }
+
+    .allmant {
+        display: block;
+        border-radius: 2vw;
+        border: solid 2px white;
+        padding: 1vw;
+        margin-bottom: 10vw;
+        text-align: center;
+    }
+
+    .hjalpRuta {
+        display: block;
+        border-radius: 2vw;
+        margin-bottom: 10vw;
+        border: solid 2px white;
+        padding: 1vw;
+    }
+
+    .hjalpBild img {
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    .left {
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        border-radius: 2vw;
+
+    }
+
+    .right {
+        width: 96%;
+        margin: 1vw;
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+
+    }
+
+    .kontaktParent {
+        display: block;
+        width: 90%;
+        padding: 1vw;
+        margin: 10vw 2vw 1vw;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .kontaktParent img {
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+    }
+
+    /*
+    Result page container
+	*/
+    #YourPartsContainer {
+        background-color: #b19cd9;
+        width: 75%;
+        margin: 2vw auto auto auto;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    #YourParts {
+        display: table;
+        width: 95%;
+        margin: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+    }
+
+    .setsDiv {
+        display: table;
+        margin: auto;
+        width: 95%;
+        margin-top: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+    }
+
+    .setsDivContainer {
+        background-color: #8b72bb;
+        width: 75%;
+        margin: 2vw auto auto auto;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .NextPageBar {
+        float: right;
+        background-color: #b19cd9;
+        display: table;
+        margin: 1vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        border: solid 2px white;
+    }
+
+    /*
+		Sets part of result page
+	*/
+
+    .AddParts {
+        margin: 7% auto 1vw auto;
+        background-color: #b19cd9;
+        display: table;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .leftSetDiv {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        border-radius: 2vw;
+
+    }
+
+    .rightSetDiv {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        border-radius: 2vw;
+        margin-right: 2vw;
+        padding: 1vw;
+    }
+
+    .setImg {
+        width: 70%;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .setsHeader {
+        padding-left: 2vw;
+    }
+
+    .pageIndex {
+        margin: 0vw 2vw
+    }
+
+    #partHeader {
+        text-align: center;
+        padding: 1vw;
+    }
+
+}
+
+/* mindre datorskärmar - inprincip samma CSS klasser och IDs som ovanför men anpassade för annan media */
+@media only screen and (min-width: 950px) {
+    .menu 
+    {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1vw;
+        border-bottom: solid 2px white;
+    }
+
+    .menu ul, .dropdown {
+        overflow: hidden;
+    }
+
+    .menu a:hover, #dark:hover, #light:hover {
+        background-color: rgb(184, 64, 100);
+        border-radius: 1vw;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        padding: 1vw;
+        float: left;
+        text-decoration: none;
+    }
+
+    .center {
+        margin: auto;
+        margin-bottom: 5vw;
+        width: 70%;
+    }
+
+    .Color1 {
+        background-color: #b19cd9;
+    }
+
+    .Color2 {
+        background-color: #e0a7fa;
+    }
+
+    #logo {
+        display: block;
+        margin-top: 8vw;
+        margin-bottom: 3vw;
+        height: auto;
+        width: 100%;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+        background-color: rgba(177, 156, 217, 0.5);
+    }
+
+    .searchBars {
+        display: table;
+        margin-top: 2vw;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+
+    }
+
+    .searchBarLeft {
+        display: table-cell;
+
+    }
+
+    .searchBarRight {
+        display: table-cell;
+    }
+
+    .QuestionMark {
+        margin: 0.2vw;
+        padding-left: 0.25vw;
+        padding-right: 0.25vw;
+        border: solid 0.15vw white;
+        border-radius: 0.5vw;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        padding: 1vw;
+        position: absolute;
+        border-radius: 2vw;
+        border: solid 0.15vw white;
+        box-shadow: 0vw 1vw 2vw 0vw rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    #TopLådan {
+        background-image: url("images/ramFull.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 22vw;
+        margin-top: 2vw;
+        margin-bottom: 0;
+
+    }
+
+    #LegoLådan {
+        background-color: #be935a;
+        background-image: url("images/ramCenter.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        width: 100%;
+        min-height: 16vw;
+        height: auto;
+    }
+
+    #BottLådan {
+        background-color: #be935a;
+        background-image: url("images/ramBotten.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6vw;
+        margin-top: -5vw;
+    }
+
+    .LegoLådanPartDivs {
+        display: block;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 1vw;
+        overflow: hidden;
+
+    }
+
+    .LegoLådanPartDivs img {
+        width: 7vw;
+        height: auto;
+    }
+
+    .partDivImg {
+        float: left;
+        border: solid 2px Brown;
+
+    }
+
+    .LegoLådanPartDivs h2 {
+        float: left;
+        font-size: 2vw;
+        vertical-align: center;
+        margin-left: 1vw;
+    }
+
+    .partDivClose {
+        float: right;
+    }
+
+    .hjalpParent {
+        margin: auto;
+        margin-top: 10vw;
+        height: auto;
+        width: 75%;
+    }
+
+    .allmant {
+        display: block;
+        border-radius: 2vw;
+        border: solid 2px white;
+        padding: 1vw;
+        margin-bottom: 4vw;
+        text-align: center;
+    }
+
+    .hjalpRuta {
+        display: table;
+        border-radius: 2vw;
+        margin-bottom: 4vw;
+        border: solid 2px white;
+        padding: 1vw;
+    }
+
+    .hjalpBild img {
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    .left {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        height: 100%;
+        border-radius: 2vw;
+        padding: 1vw;
+
+    }
+
+    .right {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        margin: 0;
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+
+    }
+
+    .kontaktParent {
+        display: table;
+        width: 90%;
+        padding: 1vw;
+        margin: 8vw 2vw 1vw;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .kontaktParent img {
+        width: 22%;
+        height: auto;
+        border-radius: 2vw;
+    }
+
+    /*
+    Result page container
+	*/
+    #YourPartsContainer {
+        background-color: #b19cd9;
+        margin-left: 1vw;
+        width: 45%;
+        float: left;
+        overflow: scroll;
+        height: 55%;
+        position: fixed;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    #YourParts {
+        display: table;
+        width: 90%;
+        margin: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+
+    }
+
+    #YourParts .LegoLådanPartDivs {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-bottom: solid 2px white;
+    }
+
+    .setsDiv {
+
+        display: table;
+        margin: 2vw auto auto auto;
+        width: 90%;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+    }
+
+    .setsDivContainer {
+        background-color: #8b72bb;
+        margin-right: 1vw;
+        width: 50%;
+        float: right;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .NextPageBar {
+        float: right;
+        background-color: #b19cd9;
+        display: table;
+        margin: 2vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        border: solid 2px white;
+    }
+
+    /*
+		Sets part of result page
+	*/
+    .AddParts {
+        margin: 7% auto 1vw auto;
+        background-color: #b19cd9;
+        display: table;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .leftSetDiv {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        border-radius: 2vw;
+
+    }
+
+    .rightSetDiv {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        border-radius: 2vw;
+        margin-right: 2vw;
+        padding: 1vw;
+    }
+
+    .setImg {
+        width: 70%;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .hidden {
+        display: inline;
+    }
+
+    .correct {
+        background-color: rgb(184, 64, 100);
+    }
+
+    .setsHeader {
+        padding-left: 2vw;
+    }
+
+    .pageIndex {
+        margin: 0vw 2vw
+    }
+
+    #partHeader {
+        text-align: center;
+        padding: 1vw;
+    }
+}
+
+/* Större datorskärmar - inprincip samma CSS klasser och IDs som ovanför men anpassade för annan media */
+@media only screen and (min-width: 1025px) {
+    .menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1vw;
+        border-bottom: solid 2px white;
+    }
+
+    .menu ul, .dropdown {
+        overflow: hidden;
+    }
+
+    .menu a:hover, #dark:hover, #light:hover {
+        background-color: rgb(184, 64, 100);
+        border-radius: 1vw;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        padding: 1vw;
+        float: left;
+        text-decoration: none;
+    }
+
+
+    .center {
+        margin: auto;
+        margin-bottom: 5vw;
+        width: 70%;
+    }
+
+    .Color1 {
+        background-color: #b19cd9;
+    }
+
+    .Color2 {
+        background-color: #e0a7fa;
+    }
+
+    #logo {
+        margin: auto;
+        display: block;
+        margin-top: 7vw;
+        margin-bottom: 3vw;
+        height: auto;
+        width: 70%;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+        background-color: rgba(255, 255, 255, 0.3);
+        ;
+    }
+
+    .searchBars {
+        margin: auto;
+        display: table;
+        margin-top: 2vw;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+
+    }
+
+    .searchBarLeft {
+        display: table-cell;
+
+    }
+
+    .searchBarRight {
+        display: table-cell;
+    }
+
+    .QuestionMark {
+        margin: 0.2vw;
+        padding-left: 0.25vw;
+        padding-right: 0.25vw;
+        border: solid 0.15vw white;
+        border-radius: 0.5vw;
+    }
+
+    .QuestionMark:hover {
+        display: block;
+
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .hover-content {
+        display: none;
+        padding: 1vw;
+        border-radius: 2vw;
+        border: solid 0.15vw white;
+        box-shadow: 0vw 1vw 2vw 0vw rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+
+
+    #TopLådan {
+        background-image: url("images/ramFull.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 22vw;
+        margin-top: 2vw;
+        margin-bottom: 0;
+
+    }
+
+    #LegoLådan {
+        background-color: #be935a;
+        background-image: url("images/ramCenter.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        width: 100%;
+        min-height: 14vw;
+        height: auto;
+    }
+
+    #BottLådan {
+        background-color: #be935a;
+        background-image: url("images/ramBotten.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6vw;
+        margin-top: -5vw;
+    }
+
+    .LegoLådanPartDivs {
+        display: block;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 1vw;
+        overflow: hidden;
+
+    }
+
+    .LegoLådanPartDivs img {
+        width: 7vw;
+        height: auto;
+    }
+
+    .partDivImg {
+        float: left;
+        border: solid 2px Brown;
+
+    }
+
+    .LegoLådanPartDivs h2 {
+        float: left;
+        font-size: 2vw;
+        vertical-align: center;
+        margin-left: 1vw;
+    }
+
+    .partDivClose {
+        float: right;
+    }
+
+    .hjalpParent {
+        margin: auto;
+        margin-top: 10vw;
+        height: auto;
+        width: 75%;
+    }
+
+    .allmant {
+        display: block;
+        border-radius: 2vw;
+        border: solid 2px white;
+        padding: 1vw;
+        margin-bottom: 4vw;
+        text-align: center;
+    }
+
+    .hjalpRuta {
+        margin: auto;
+        display: table;
+        border-radius: 2vw;
+        margin-bottom: 4vw;
+        border: solid 2px white;
+        padding: 1vw;
+    }
+
+    .hjalpBild img {
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    .hjalpText {
+        font-size: 1vw;
+    }
+
+    .left {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        height: 100%;
+        border-radius: 2vw;
+        padding: 1vw;
+
+    }
+
+    .correct {
+        background-color: rgb(184, 64, 100);
+    }
+
+    .right {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        margin-left: 1vw;
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+
+    }
+
+    .kontaktParent {
+        display: table;
+        width: 90%;
+        padding: 1vw;
+        margin: 4vw 2vw 1vw;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .kontaktParent img {
+        width: 22%;
+        height: auto;
+        border-radius: 2vw;
+    }
+
+    /*
+		Result page container
+	*/
+    #YourPartsContainer {
+        background-color: #b19cd9;
+        width: 45%;
+        float: left;
+        overflow: scroll;
+        height: 55%;
+        position: fixed;
+        border-radius: 2vw;
+        border: solid 2px white;
+        margin-left: 1vw;
+    }
+
+    #YourParts {
+        display: table;
+        width: 89%;
+        padding: 1vw;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+
+    }
+
+    #YourParts .LegoLådanPartDivs {
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: solid 2px white;
+    }
+
+    .setsDiv {
+
+        display: table;
+        margin: 2vw auto auto auto;
+        width: 90%;
+        background-color: #e0a7fa;
+        border-radius: 2vw;
+        padding: 1vw;
+        border: solid 2px white;
+    }
+
+    .setsDivContainer {
+        background-color: #8b72bb;
+        width: 50%;
+        margin-right: 1vw;
+        float: right;
+        overflow: hidden;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .NextPageBar {
+        float: right;
+        background-color: #b19cd9;
+        display: table;
+        margin: 2vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        border: solid 2px white;
+    }
+
+    /*
+		Sets part of result page
+	*/
+
+    .AddParts {
+        margin: 7% auto 1vw auto;
+        background-color: #b19cd9;
+        display: table;
+        padding: 2vw;
+        text-align: center;
+        border-radius: 2vw;
+        border: solid 2px white;
+    }
+
+    .leftSetDiv {
+        display: table-cell;
+        vertical-align: top;
+        float: left;
+        width: 40%;
+        border-radius: 2vw;
+
+    }
+
+    .rightSetDiv {
+        display: table-cell;
+        float: right;
+        width: 50%;
+        border-radius: 2vw;
+        margin-right: 2vw;
+        padding: 1vw;
+    }
+
+    .setImg {
+        width: 70%;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .hidden {
+        display: inline;
+    }
+
+    .setsHeader {
+        padding-left: 2vw;
+    }
+
+    .pageIndex {
+        margin: 0vw 2vw
+    }
+
+    #partHeader {
+        text-align: center;
+        padding: 1vw;
+    }
+}
+
+/* Footer*/
+footer {
+    background-color: white;
+    padding: 0.2vw;
+
+}
+
+#footerLeft {
+    display: table-cell;
+    vertical-align: top;
+    width: 20%;
+    height: 100%;
+    padding: 1vw;
+
+}
+
+#footerRight {
+    display: table-cell;
+    vertical-align: top;
+    width: 10%;
+    height: 100%;
+    padding: 1vw;
+
+}
+
+#topDiv {
+    margin-top: 10vw;
+}
+
+.partDivClose {
+    cursor: pointer;
+}
